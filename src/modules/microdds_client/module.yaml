@@ -15,7 +15,7 @@ module_name: Micro XRCE-DDS
 serial_config:
     - command: |
         if [ $SERIAL_DEV != ethernet ]; then
-            set XRCE_DDS_ARGS "-t serial -d ${SERIAL_DEV} -b p:${BAUD_PARAM}"
+            set XRCE_DDS_ARGS "-t serial -d ${SERIAL_DEV} -b p:${BAUD_PARAM} -n uuv00"
         else
             set XRCE_DDS_ARGS "-t udp"
         fi
